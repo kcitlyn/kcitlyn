@@ -1,17 +1,20 @@
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=180&section=header&text=hi,%20I'm%20Kaitlyn%20✿&fontSize=44&fontColor=4a2540&fontAlignY=34&desc=ECE%20@%20UT%20Austin%20·%20I%20make%20software%20touch%20the%20real%20world&descSize=16&descAlignY=56&descAlign=50" width="100%" />
+<!-- Banner height trimmed 180 -> 150: it's forced to width:100%, so on GitHub's
+     ~1012px column it scales up ~19% and the wave's soft bottom edge left an
+     obvious gap under it. The rotating typing-SVG that used to sit here is gone
+     for the same reason — two stacked images meant a <p> margin between them,
+     and a static text line can be a real clickable CTA instead of a picture. -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=150&section=header&text=hi,%20I'm%20Kaitlyn%20✿&fontSize=42&fontColor=4a2540&fontAlignY=36&desc=ECE%20@%20UT%20Austin%20·%20prev.%20SWE%20Intern%20@%20AWS&descSize=16&descAlignY=60&descAlign=50" width="100%" />
 
-<a href="https://kaitlynchen.dev">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=ECE+%40+UT+Austin+%C2%B7+prev.+SWE+Intern+%40+AWS;I+build+agent+runtimes+and+STM32+firmware;1st+place+%F0%9F%8F%86+Amazon+internal+hackathon+%C2%B7+190%2B+engineers;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
-</a>
-
-<br/>
+**want to know more? → [kaitlynchen.dev](https://kaitlynchen.dev)** &nbsp;·&nbsp; or just [say hi](mailto:kcitlynychen@gmail.com) ✿
 
 [![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
 [![Email](https://img.shields.io/badge/say_hi-FFC1DD?style=for-the-badge&logo=gmail&logoColor=4A2540&labelColor=FFD6E8)](mailto:kcitlynychen@gmail.com)
+
+<sub>made with 💗 by kaitlyn — hand-written markdown, no generator</sub>
 
 </div>
 
@@ -31,10 +34,9 @@ kaitlyn = {
     "prev":      "SWE Intern @ AWS — GenAI Developer Tools",
     "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
-    "ask_me_about": ["the last concert I went to (there are many)",
-                     "the weirdest thing I've made a microcontroller do"],
-    "fun_fact":  "I built Fruit Ninja on a microcontroller, then soldered "
-                 "the board it runs on — buying one felt like cheating 🍉",
+    "ask_me_about": "the last concert I went to (there are many)",
+    "proudest":  "1st place at Amazon's internal hackathon — 190+ engineers, "
+                 "judged by a panel of L8 senior leaders 🏆",
 }
 ```
 
@@ -241,7 +243,5 @@ or to hear about a project you're excited about.
 [![LinkedIn](https://img.shields.io/badge/kaitlynychen-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540)](https://www.linkedin.com/in/kaitlynychen)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f9a8d4,50:ffb3d1,100:ffd6e8&height=120&section=footer&text=thanks%20for%20scrolling%20✿&fontSize=20&fontColor=4a2540&fontAlignY=72" width="100%" />
-
-<sub>made with 💗 by kaitlyn — hand-written markdown, no generator</sub>
 
 </div>
