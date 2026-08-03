@@ -64,78 +64,59 @@ explained to me, which is conveniently most of engineering.
 
 ## ✿ things I've built
 
-<!-- Every project here follows the same shape on purpose: heading → one or two
-     sentences of what it is → the single number that proves it → tags + link.
-     The old version opened with nested "matching engine / what I owned" bullet
-     lists, which is résumé density in a place people are skimming, and nobody
-     reads twelve bullets on a profile page. The engineering detail didn't get
-     deleted, it moved to the site, which is where someone who wants it goes. -->
+<!-- One or two lines each, then a link out. This section is a table of contents,
+     not the documentation: anyone still reading by the third paragraph was going
+     to click through anyway, and anyone who wasn't had already stopped. Full
+     write-ups live on the site, engineering detail lives in each repo. -->
 
-> A sentence each. The **full write-ups** live on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
+> Short version here. **Full write-ups on [kaitlynchen.dev →](https://kaitlynchen.dev)**
 
 <br/>
 
 ### 🥇 Ctrl+Meet &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/ctrl-meet)
 
-A cross-team matchmaking platform for interns who get flown to a new city and
-seated on heads-down teams. A 16-question survey feeds a recommender that
-auto-weights each question by how much it actually distinguishes people, then
-re-ranks for variety so your matches aren't five copies of you. Shipped on real
-AWS behind SSO, not localhost.
+Cross-team matchmaking for interns flown to a new city and seated on heads-down
+teams. A 16-question survey feeds a recommender that weights each question by how
+much it actually distinguishes people. Shipped on real AWS behind SSO.
 
-**🏆 We won the whole hackathon, out of 190+ engineers**, judged by
-a panel of Amazon L8 senior leaders.
+**🏆 We won the whole hackathon, out of 190+ engineers**, judged by a panel of
+Amazon L8 senior leaders.
 
-`React` `Lambda` `DynamoDB` `Bedrock` `Titan` `API Gateway` `CDK` `RAG` `Vitest`
+`React` `Lambda` `DynamoDB` `Bedrock` `RAG` `CDK`
 
 <br/>
 
 ### 👤 TrainYourFace &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/TrainYourFace)
 
-I built this as a webcam face-recognition tool and it worked, right up until I
-held a photo of myself to the camera and it greeted me by name. The matcher
-wasn't wrong. "Is this the right face" and "is there a person here" are just
-different questions, and answering only the first one gets you a system that
-feels secure and isn't.
+Face recognition that knows when it's being fooled. A liveness model tells a real
+face from a photo or a phone screen, and recognition is gated behind it, so
+holding up a picture of me doesn't unlock anything.
 
-So it became an anti-spoofing project. A small PyTorch model learns to tell a
-live face from a printed photo or a phone screen, scored with the ISO/IEC
-30107-3 metrics the field actually reports, and recognition is gated behind it.
-Liveness runs first, so a rejected face never gets embedded, and the UI won't
-print "SPOOF, matched Kaitlyn" and tell an attacker their spoof found the right
-person. With no liveness model loaded it reports UNVERIFIED, never TRUSTED: a
-check that defaults to pass is worse than no check, because it looks like
-protection.
+**Liveness in 0.44 ms** on a 1.0 MB model, scored with the ISO/IEC 30107-3
+metrics the field actually reports.
 
-**Liveness in 0.44 ms**, about 2% of the frame budget: 226K parameters in a
-1.0 MB model, 304 tests. Splits are subject-disjoint and a run reproduces from
-its seed down to identical weights, so a number it reports is one someone else
-could check. Also dropped dlib entirely, so installing it needs no compiler.
-
-`Python` `PyTorch` `ONNX Runtime` `CoreML` `OpenCV` `Anti-spoofing` `Edge AI`
+`Python` `PyTorch` `ONNX Runtime` `CoreML` `Anti-spoofing` `Edge AI`
 
 <br/>
 
 ### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SDE intern, GenAI Developer Tools*
 
 LLM agents are normally stuck with whatever tools they booted with. I built a
-proxy that runs child MCP servers as live subprocesses, so an agent can install
-a capability and use it **mid-session with no restart**, then wired it to a
-~4,000-server enterprise registry it can search on its own.
+proxy that runs child MCP servers as live subprocesses, so an agent can install a
+capability and use it **mid-session with no restart**.
 
-**3 services, ~200 tests, and warm tool lookups under 10ms** (down from ~2s
-cold), hardened against prompt injection and tool poisoning.
+**3 services, ~200 tests, warm tool lookups under 10ms**, hardened against
+prompt injection and tool poisoning.
 
-`TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `Bedrock` `CDK` `CloudWatch`
+`TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `Bedrock` `CDK`
 
 <br/>
 
 ### 🚗 Texas EcoCar &nbsp;·&nbsp; *ML steering controller for an autonomous vehicle*
 
-Replaced the hand-tuned PID steering controller on UT's autonomous vehicle with
-a Gaussian Process model, which needs no manual calibration and matches the
-tracking quality. The nice part: the GP reports its own uncertainty, so the car can tell when it's
-outside what it was trained on and fall back before that becomes a problem.
+Replaced the hand-tuned PID steering controller on UT's autonomous vehicle with a
+Gaussian Process model, which needs no manual calibration and reports its own
+uncertainty, so the car can tell when it's outside what it was trained on.
 
 **0.23 m RMSE lane tracking**, trained on a 678,000-point system-ID pipeline.
 
@@ -145,49 +126,36 @@ outside what it was trained on and fall back before that becomes a problem.
 
 ### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe_Desktop)
 
-<!-- Live badges, not hardcoded numbers: shields.io reads the GitHub API on every
-     page load, so these can't quietly go stale the way "⭐13" would the moment
-     someone else stars it. -->
 [![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe_Desktop?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/stargazers)
 [![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe_Desktop?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/forks)
 
-Speech-to-text and translation across **20+ languages**, running entirely on
-your own machine: no cloud, no API keys, nothing leaving the device.
+Speech-to-text and translation across **20+ languages**, running entirely on your
+own machine. No cloud, no API keys, nothing leaving the device.
 
-**People I've never met found it, starred it, forked it, and started filing
-feature requests.** Nobody asked them to, and it's still the most fun feedback I've
-gotten.
+**Strangers found it, starred it, forked it, and started filing feature
+requests.** Still the most fun feedback I've gotten.
 
-`Python` `Vosk` `Argos` `pyttsx3`
+`Python` `Vosk` `Argos`
 
 <br/>
 
 ### 🩺 edgedoctor &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/edgedoctor) &nbsp;*(in progress)*
 
-Tells you why your model got slow or broke once you put it on real edge
-hardware (quantization mismatches, unsupported ops, memory pressure) instead
-of leaving you to guess.
+Tells you why your model broke or got slow once you put it on real edge hardware,
+instead of leaving you to guess.
 
 `Python` `Edge AI` `ML Tooling`
 
 <br/>
 
-### 🚄 Texas Guadaloop &nbsp;·&nbsp; *hyperloop pod firmware*
+### 🌌 Astrarium &nbsp;·&nbsp; *HackTX 2025*
 
-Real-time Hall-effect speed sensing on **STM32**, using ADC with DMA circular
-buffering so samples never get dropped. I also wrote the pod-wide embedded
-architecture reference covering 9 distributed nodes, CAN routing, and the LoRa
-link to the ground station, which became the doc the whole team wired against.
+LLM backend that validates every model response and falls back gracefully, so a
+flaky model never takes the app down.
 
-`C` `STM32` `CAN` `ADC/DMA` `UART`
+`FastAPI` `PostgreSQL` `Next.js`
 
 <br/>
-
-### one more
-
-| | |
-|---|---|
-| 🌌 **Astrarium** · *HackTX 2025* | LLM backend that validates every model response and falls back gracefully, so a flaky model never takes the app down. `FastAPI` `PostgreSQL` `Next.js` |
 
 <div align="center">
 
