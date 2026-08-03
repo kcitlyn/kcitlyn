@@ -227,8 +227,8 @@ background I probably spent too long on.
 
 ### ✿ let's build something ✿
 
-I'm always happy to talk about embedded systems, edge ML, or agentic AI —
-or to hear about a project you're excited about.
+My inbox is open for anything: a role, a project, a question, a cool thing you
+made, or just to say hi. I answer everyone.
 
 [![Email](https://img.shields.io/badge/kcitlynychen@gmail.com-FFD6E8?style=for-the-badge&logo=gmail&logoColor=4A2540)](mailto:kcitlynychen@gmail.com)
 [![Portfolio](https://img.shields.io/badge/kaitlynchen.dev-FFB3D1?style=for-the-badge&logo=vercel&logoColor=4A2540)](https://kaitlynchen.dev)
