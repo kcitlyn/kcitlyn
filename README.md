@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=180&section=header&text=hi,%20I'm%20Kaitlyn%20✿&fontSize=44&fontColor=4a2540&fontAlignY=34&desc=ECE%20@%20UT%20Austin%20·%20I%20make%20software%20touch%20the%20real%20world&descSize=16&descAlignY=56&descAlign=50" width="100%" />
 
 <a href="https://kaitlynchen.dev">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=ECE+%40+UT+Austin+%C2%B7+prev.+SWE+Intern+%40+AWS;I+build+agent+runtimes+and+STM32+firmware;1st+place+%F0%9F%8F%86+Amazon+hackathon+%C2%B7+190%2B+engineers;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=ECE+%40+UT+Austin+%C2%B7+prev.+SWE+Intern+%40+AWS;I+build+agent+runtimes+and+STM32+firmware;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
 </a>
 
 <br/>
@@ -15,17 +15,16 @@
 
 </div>
 
-<!-- The skim-in-five-seconds strip. Recruiters read this and nothing else, so
-     each line has to be a complete claim on its own — a bare number with a
-     three-word caption means nothing to someone who hasn't read the rest.
-     Left-aligned on purpose: centered sentence-length lines read ragged. -->
+<!-- The skim-in-five-seconds strip. Each line is a complete claim on its own —
+     a bare number with a three-word caption means nothing to someone who
+     hasn't read the rest. Left-aligned: centered sentences read ragged.
+     Deliberately only three, and phrased differently from the project write-ups
+     below, so this is a summary rather than an echo. -->
 🏆 &nbsp; **Won 1st place at Amazon's internal hackathon**, out of 190+ competing engineers
 
-🤖 &nbsp; **Built the agent tooling behind a ~4,000-server enterprise registry** as an SWE intern at AWS — coding agents can now find and run those tools on their own
+🤖 &nbsp; **Made a ~4,000-server enterprise registry usable by AI agents** as an SWE intern at AWS
 
 🚗 &nbsp; **Replaced a car's hand-tuned steering controller with a machine-learning one** on UT's autonomous vehicle team, and it tracked the lane just as well
-
-🎙️ &nbsp; **Shipped an offline transcription tool people actually use** — 20+ languages, open-source, strangers file feature requests
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
@@ -33,9 +32,9 @@
 
 ```python
 kaitlyn = {
-    "prev":      "SWE Intern @ AWS — GenAI Developer Tools",
     "school":    "BS Electrical & Computer Engineering, UT Austin '28",
-    "focus":     "Engineering Honors — Computer Architecture & Embedded Systems",
+    "focus":     "Computer Architecture & Embedded Systems",
+    "prev":      "SWE Intern @ AWS — GenAI Developer Tools",
     "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
     "ask_me_about": ["the last concert I went to (there are many)",
@@ -48,50 +47,16 @@ kaitlyn = {
 I work in the overlap between **embedded systems** and **machine learning** — close
 enough to the hardware to care about clock cycles, close enough to the models to
 care about what they get wrong. I like problems where the answer has to survive
-contact with real hardware.
+contact with real hardware, and I tend to chase an idea until it actually *works*.
 
 Being a **first-gen student** taught me to reverse-engineer systems nobody
-explained to me, which is conveniently most of engineering. I tend to chase ideas
-all the way to something that actually *works* — my offline translation tool
-ended up with real users filing feature requests, still the most fun feedback
-I've gotten.
-
-<!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
-
-## ✿ what I built at AWS
-
-> *SWE Intern · GenAI Developer Tools · Summer 2026 · TypeScript, Java, MCP, Lambda, CloudWatch*
-
-**🤖 A self-augmenting agent runtime.** Today's LLM agents are stuck with whatever
-tools they had at startup. I removed that constraint — a proxy that spawns and
-lifecycle-manages child **MCP** servers as live subprocesses, with namespaced
-routing, handshake timeouts, crash detection, and automatic cleanup. An agent can
-now **install a capability and use it mid-session, with no restart.**
-
-**🔍 Made a ~4,000-server enterprise registry agent-accessible.** Designed, built,
-and validated an end-to-end agentic toolchain (**3 services, ~200 automated
-tests**) that turns a human-only CLI into a self-service capability layer, so
-coding agents can autonomously discover, install, and operate tools.
-
-**⚡ Context-budget-aware retrieval, ~200× faster warm.** A BM25 + fuzzy-matching
-index with relevance ranking, TTL caching, and harness-tuned result caps —
-serving warm queries in **under 10ms** versus a **~2s** cold build, so the agent
-picks relevant tools *without* flooding its context window.
-
-**🔒 Hardened it against prompt injection and tool poisoning.** Untrusted-output
-handling, input allowlisting, shell-free execution, a non-repudiation audit log,
-and least-privilege scoping that limits each bundled dependency to an allowlisted
-subset of tools — all designed under a **generative-AI threat model**.
-
-**📈 Serverless telemetry that can't break the thing it measures.** A Lambda +
-CloudWatch pipeline with a lazy, coalescing in-process buffer and a fail-safe
-flush, so observability can never add latency to — or fail — a tool call.
+explained to me, which is conveniently most of engineering.
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
 ## ✿ things I've built
 
-> The full write-ups, with the engineering detail, live on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
+> Full write-ups, with the engineering detail, on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
 
 <br/>
 
@@ -125,6 +90,21 @@ a localhost demo.
 
 <br/>
 
+### 🤖 Agent tooling at AWS — *SWE intern, GenAI Developer Tools*
+
+LLM agents are normally stuck with whatever tools they had at startup. I built a
+proxy that **lifecycle-manages child MCP servers as live subprocesses** — so an
+agent can install a capability and use it **mid-session, no restart** — and wired
+it to a **~4,000-server enterprise registry** it can search on its own.
+
+- **3 services, ~200 automated tests**, turning a human-only CLI into a self-service capability layer
+- BM25 + fuzzy retrieval, **~200× faster warm** (under **10ms** vs. a ~2s cold build) and capped so it can't flood the agent's context window
+- Hardened against **prompt injection and tool poisoning** under a generative-AI threat model: untrusted-output handling, allowlisting, shell-free execution, audit logging, least-privilege tool scoping
+
+`TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `Bedrock` `CDK` `CloudWatch`
+
+<br/>
+
 ### 🚗 Texas EcoCar — *ML steering controller for an autonomous vehicle*
 
 Replaced a gain-scheduled PID with a **Gaussian Process** controller — no more
@@ -148,7 +128,8 @@ locally — no cloud, no API keys, no data leaving your machine. A real-time
 **multithreaded producer/consumer** pipeline (audio → Vosk STT → Argos NMT → TTS)
 with structured exports and fault recovery for device/model failures.
 
-**Open-sourced, and external users started filing feature requests.**
+**Open-sourced, and strangers started filing feature requests** — still the most
+fun feedback I've gotten.
 
 `Python` `Vosk` `Argos` `pyttsx3`
 
@@ -179,13 +160,12 @@ reference.
 
 <br/>
 
-### and a few more
+### and a couple more
 
 | | |
 |---|---|
 | 👤 **[TrainYourFace](https://github.com/kcitlyn/TrainYourFace)** | Real-time multi-face ID from **128-dim ResNet** embeddings, fully offline, with a tunable false-accept vs. missed-ID threshold. `Python` `OpenCV` `dlib` |
 | 🌌 **Astrarium** · *HackTX 2025* | FastAPI + PostgreSQL LLM backend with structured-output validation and timeout/fallback guards, so flaky model latency never takes the app down. `FastAPI` `PostgreSQL` `Next.js` |
-| 🍉 **Fruit Ninja on a microcontroller** | On a PCB I designed, printed, and soldered myself — because I wanted to know if I could. `ARM Cortex-M0` `C` `KiCad` |
 
 <div align="center">
 
@@ -236,59 +216,22 @@ background I probably spent too long on.
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
-## ✿ how I work
-
-<table>
-<tr>
-<td width="33%" valign="top" align="center">
-
-**🔬 I trust measurements over vibes**
-
-The GP fault detector exists because I checked *when* the model was wrong, not
-just how often. Same instinct behind validating uncertainty bounds at 100%
-coverage within 2σ.
-
-</td>
-<td width="33%" valign="top" align="center">
-
-**🧱 I build things that fail safely**
-
-Fallback to proportional control. Fail-safe telemetry flush. Structured-output
-guards. Crash detection and cleanup. If it can break, I'd rather it break
-predictably.
-
-</td>
-<td width="33%" valign="top" align="center">
-
-**🚢 I finish things**
-
-Deployed on real AWS, not localhost. Open-sourced and maintained for actual
-users. 138 of 157 tests. Shipping is the part where you find out.
-
-</td>
-</tr>
-</table>
-
-<!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
-
 ## ✿ recognition
 
 | | |
 |---|---|
-| 🏆 | **1st Place — Amazon Internal Hackathon** · winning team among **190+ engineers**, cleared a cohort-wide peer vote and chosen by a panel of Amazon L8 senior leaders |
+| 🏆 | **1st Place — Amazon Internal Hackathon** · winner among 190+ engineers |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
-| 🎓 | **Engineering Honors** · UT Austin Cockrell School — Computer Architecture & Embedded Systems |
-| 💛 | **Engineering Honors Scholarship** |
+| 🎓 | **Engineering Honors** + **Engineering Honors Scholarship** · UT Austin Cockrell School |
 | ✨ | **National First-Gen Recognition** |
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
 ## ✿ currently
 
-- 🔭 **building** — [`edgedoctor`](https://github.com/kcitlyn/edgedoctor), so you can tell *why* your model got slower on the edge instead of guessing
 - 🌱 **learning** — how far I can push real models onto small hardware before they stop being useful
 - 💌 **looking for** — SWE / ML / embedded / edge-AI internships
-- 🎧 **outside of code** — more concerts than is reasonable, sudoku patterns, hiking, and a steady rotation of Raspberry Pi projects
+- 🎧 **outside of code** — hiking, sudoku, and a steady rotation of Raspberry Pi projects
 
 <br/>
 
