@@ -56,7 +56,7 @@ explained to me, which is conveniently most of engineering.
 
 <br/>
 
-### 🥇 Ctrl+Meet — *we won the whole hackathon*
+### 🥇 Ctrl+Meet
 
 **Grand prize · Amazon's internal hackathon · 190+ engineers**
 &nbsp;·&nbsp; [**`view repo →`**](https://github.com/kcitlyn/ctrl-meet)
