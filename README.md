@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=180&section=header&text=hi,%20I'm%20Kaitlyn%20✿&fontSize=44&fontColor=4a2540&fontAlignY=34&desc=ECE%20@%20UT%20Austin%20·%20I%20make%20software%20touch%20the%20real%20world&descSize=16&descAlignY=56&descAlign=50" width="100%" />
 
 <a href="https://kaitlynchen.dev">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=SWE+Intern+%40+AWS+%C2%B7+GenAI+Developer+Tools;I+build+agent+runtimes+and+STM32+firmware;1st+place+%F0%9F%8F%86+Amazon+hackathon+%C2%B7+190%2B+engineers;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=ECE+%40+UT+Austin+%C2%B7+prev.+SWE+Intern+%40+AWS;I+build+agent+runtimes+and+STM32+firmware;1st+place+%F0%9F%8F%86+Amazon+hackathon+%C2%B7+190%2B+engineers;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
 </a>
 
 <br/>
@@ -14,14 +14,19 @@
 [![Email](https://img.shields.io/badge/say_hi-FFC1DD?style=for-the-badge&logo=gmail&logoColor=4A2540&labelColor=FFD6E8)](mailto:kcitlynychen@gmail.com)
 ![Profile views](https://komarev.com/ghpvc/?username=kcitlyn&style=for-the-badge&color=ffb3d1&label=visitors)
 
-<br/>
-
-<!-- The skim-in-five-seconds strip. Recruiters read this and nothing else. -->
-| 🏆 | 🤖 | ⚡ | 📊 | 🎓 |
-|:--:|:--:|:--:|:--:|:--:|
-| **1st / 190+**<br><sub>engineers, Amazon hackathon</sub> | **~4,000**<br><sub>server registry made<br>agent-accessible</sub> | **<10ms**<br><sub>warm tool retrieval<br>(from ~2s cold)</sub> | **678k**<br><sub>data points in my<br>sys-ID pipeline</sub> | **3.8 GPA**<br><sub>ECE, Engineering<br>Honors @ UT</sub> |
-
 </div>
+
+<!-- The skim-in-five-seconds strip. Recruiters read this and nothing else, so
+     each line has to be a complete claim on its own — a bare number with a
+     three-word caption means nothing to someone who hasn't read the rest.
+     Left-aligned on purpose: centered sentence-length lines read ragged. -->
+🏆 &nbsp; **Won 1st place at Amazon's internal hackathon**, out of 190+ competing engineers
+
+🤖 &nbsp; **Built the agent tooling behind a ~4,000-server enterprise registry** as an SWE intern at AWS — coding agents can now find and run those tools on their own
+
+🚗 &nbsp; **Replaced a car's hand-tuned steering controller with a machine-learning one** on UT's autonomous vehicle team, and it tracked the lane just as well
+
+🎙️ &nbsp; **Shipped an offline transcription tool people actually use** — 20+ languages, open-source, strangers file feature requests
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
@@ -29,14 +34,15 @@
 
 ```python
 kaitlyn = {
-    "role":      "SWE Intern @ AWS — GenAI Developer Tools",
+    "prev":      "SWE Intern @ AWS — GenAI Developer Tools",
     "school":    "BS Electrical & Computer Engineering, UT Austin '28",
     "focus":     "Engineering Honors — Computer Architecture & Embedded Systems",
-    "lives_in":  "Austin, TX  ✈  Seattle, WA",
+    "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
-    "ask_me_about": "why your model got slower after you quantized it",
-    "fun_fact":  "I built Fruit Ninja on a microcontroller — on a PCB I "
-                 "designed, printed, and soldered myself 🍉",
+    "ask_me_about": ["the last concert I went to (there are many)",
+                     "the weirdest thing I've made a microcontroller do"],
+    "fun_fact":  "I built Fruit Ninja on a microcontroller, then soldered "
+                 "the board it runs on — buying one felt like cheating 🍉",
 }
 ```
 
@@ -53,9 +59,9 @@ I've gotten.
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
-## ✿ what I'm building at AWS
+## ✿ what I built at AWS
 
-> *GenAI Developer Tools · Summer 2026 · TypeScript, Java, MCP, Lambda, CloudWatch*
+> *SWE Intern · GenAI Developer Tools · Summer 2026 · TypeScript, Java, MCP, Lambda, CloudWatch*
 
 **🤖 A self-augmenting agent runtime.** Today's LLM agents are stuck with whatever
 tools they had at startup. I removed that constraint — a proxy that spawns and
@@ -229,7 +235,7 @@ wrote the firmware. `ARM Cortex-M0` `C` `KiCad`
 
 <img src="https://skillicons.dev/icons?i=py,c,cpp,ts,js,matlab,bash,latex&theme=light" />
 
-`C/C++` · `Python` · `TypeScript/JavaScript` · `MATLAB` · `Assembly (ARM Cortex-M0, LC-3)` · `LaTeX` · `Mandarin (conversational)`
+`C/C++` · `Python` · `TypeScript/JavaScript` · `MATLAB` · `Assembly (ARM Cortex-M0, LC-3)` · `LaTeX`
 
 **AI / agentic**
 
@@ -296,7 +302,7 @@ users. 138 of 157 tests. Shipping is the part where you find out.
 |---|---|
 | 🏆 | **1st Place — Amazon Internal Hackathon** · winning team among **190+ engineers**, cleared a cohort-wide peer vote and chosen by a panel of Amazon L8 senior leaders |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
-| 🎓 | **Engineering Honors** · UT Austin Cockrell School — Computer Architecture & Embedded Systems · **3.8 GPA** |
+| 🎓 | **Engineering Honors** · UT Austin Cockrell School — Computer Architecture & Embedded Systems |
 | 💛 | **Engineering Honors Scholarship** |
 | ✨ | **National First-Gen Recognition** |
 
@@ -304,7 +310,7 @@ users. 138 of 157 tests. Shipping is the part where you find out.
 
 ## ✿ currently
 
-- 🔭 **building** — agentic AI developer tooling at AWS, and [`edgedoctor`](https://github.com/kcitlyn/edgedoctor) on the side
+- 🔭 **building** — [`edgedoctor`](https://github.com/kcitlyn/edgedoctor), so you can tell *why* your model got slower on the edge instead of guessing
 - 🌱 **learning** — how far I can push real models onto small hardware before they stop being useful
 - 💌 **looking for** — SWE / ML / embedded / edge-AI internships
 - 🎧 **outside of code** — more concerts than is reasonable, sudoku patterns, hiking, and a steady rotation of Raspberry Pi projects
