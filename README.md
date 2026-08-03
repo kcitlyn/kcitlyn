@@ -9,7 +9,7 @@
 <!-- "currently:" is baked INTO the svg rather than sitting next to it as bold
      markdown. It has to be: GitHub strips author style attributes, so text in
      the page can't be given the SVG's font (Fira Code), its size (18px), or its
-     pink — it renders in GitHub's body font at body size in body color, and no
+     pink. It renders in GitHub's body font at body size in body color, and no
      amount of markup fixes the mismatch or the word-space gap between a text
      node and an inline image. Inside the SVG, one text element draws the whole
      line, so the alignment problem can't exist. Cost: the prefix retypes each
@@ -26,7 +26,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
 [![Email](https://img.shields.io/badge/say_hi-FFC1DD?style=for-the-badge&logo=gmail&logoColor=4A2540&labelColor=FFD6E8)](mailto:kcitlynychen@gmail.com)
 
-<sub>made with 💗 by kaitlyn — hand-written markdown, no generator</sub>
+<sub>made with 💗 by kaitlyn · hand-written markdown, no generator</sub>
 
 </div>
 
@@ -43,16 +43,16 @@
 kaitlyn = {
     "school":    "BS Electrical & Computer Engineering, UT Austin",
     "focus":     "Computer Architecture & Embedded Systems",
-    "prev":      "SDE Intern @ AWS — GenAI Developer Tools",
+    "prev":      "SDE Intern @ AWS · GenAI Developer Tools",
     "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
     "ask_me_about": "the last concert I went to (there are many)",
-    "fun_fact":  "1st place at Amazon's internal hackathon — 190+ engineers, "
+    "fun_fact":  "1st place at Amazon's internal hackathon: 190+ engineers, "
                  "judged by a panel of L8 senior leaders 🏆",
 }
 ```
 
-I work in the overlap between **embedded systems** and **machine learning** — close
+I work in the overlap between **embedded systems** and **machine learning**. Close
 enough to the hardware to care about clock cycles, close enough to the models to
 care about what they get wrong. I like problems where the answer has to survive
 contact with real hardware, and I tend to chase an idea until it actually *works*.
@@ -67,11 +67,11 @@ explained to me, which is conveniently most of engineering.
 <!-- Every project here follows the same shape on purpose: heading → one or two
      sentences of what it is → the single number that proves it → tags + link.
      The old version opened with nested "matching engine / what I owned" bullet
-     lists, which is résumé density in a place people are skimming — nobody
+     lists, which is résumé density in a place people are skimming, and nobody
      reads twelve bullets on a profile page. The engineering detail didn't get
      deleted, it moved to the site, which is where someone who wants it goes. -->
 
-> A sentence each — the **full write-ups** live on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
+> A sentence each. The **full write-ups** live on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
 
 <br/>
 
@@ -83,7 +83,7 @@ auto-weights each question by how much it actually distinguishes people, then
 re-ranks for variety so your matches aren't five copies of you. Shipped on real
 AWS behind SSO, not localhost.
 
-**🏆 Grand prize — the whole hackathon, out of 190+ engineers**, picked by a
+**🏆 We won the whole hackathon, out of 190+ engineers**, picked by a
 cohort-wide peer vote and then a panel of Amazon L8 senior leaders.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `Titan` `API Gateway` `CDK` `RAG` `Vitest`
@@ -118,7 +118,7 @@ dropped dlib entirely, so installing it needs no compiler.
 
 LLM agents are normally stuck with whatever tools they booted with. I built a
 proxy that runs child MCP servers as live subprocesses, so an agent can install
-a capability and use it **mid-session with no restart** — then wired it to a
+a capability and use it **mid-session with no restart**, then wired it to a
 ~4,000-server enterprise registry it can search on its own.
 
 **3 services, ~200 tests, and warm tool lookups under 10ms** (down from ~2s
@@ -131,8 +131,8 @@ cold), hardened against prompt injection and tool poisoning.
 ### 🚗 Texas EcoCar &nbsp;·&nbsp; *ML steering controller for an autonomous vehicle*
 
 Replaced the hand-tuned PID steering controller on UT's autonomous vehicle with
-a Gaussian Process model — no manual calibration, same tracking quality. The
-nice part: the GP reports its own uncertainty, so the car can tell when it's
+a Gaussian Process model, which needs no manual calibration and matches the
+tracking quality. The nice part: the GP reports its own uncertainty, so the car can tell when it's
 outside what it was trained on and fall back before that becomes a problem.
 
 **0.23 m RMSE lane tracking**, trained on a 678,000-point system-ID pipeline.
@@ -150,10 +150,10 @@ outside what it was trained on and fall back before that becomes a problem.
 [![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe_Desktop?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/forks)
 
 Speech-to-text and translation across **20+ languages**, running entirely on
-your own machine — no cloud, no API keys, nothing leaving the device.
+your own machine: no cloud, no API keys, nothing leaving the device.
 
 **People I've never met found it, starred it, forked it, and started filing
-feature requests.** Nobody asked them to — still the most fun feedback I've
+feature requests.** Nobody asked them to, and it's still the most fun feedback I've
 gotten.
 
 `Python` `Vosk` `Argos` `pyttsx3`
@@ -163,7 +163,7 @@ gotten.
 ### 🩺 edgedoctor &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/edgedoctor) &nbsp;*(in progress)*
 
 Tells you why your model got slow or broke once you put it on real edge
-hardware — quantization mismatches, unsupported ops, memory pressure — instead
+hardware (quantization mismatches, unsupported ops, memory pressure) instead
 of leaving you to guess.
 
 `Python` `Edge AI` `ML Tooling`
@@ -174,8 +174,8 @@ of leaving you to guess.
 
 Real-time Hall-effect speed sensing on **STM32**, using ADC with DMA circular
 buffering so samples never get dropped. I also wrote the pod-wide embedded
-architecture reference — 9 distributed nodes, CAN routing, LoRa link to the
-ground station — which became the doc the whole team wired against.
+architecture reference covering 9 distributed nodes, CAN routing, and the LoRa
+link to the ground station, which became the doc the whole team wired against.
 
 `C` `STM32` `CAN` `ADC/DMA` `UART`
 
@@ -193,7 +193,7 @@ ground station — which became the doc the whole team wired against.
 
 ### ✿ there's more on the site ✿
 
-Every project above, written up properly — plus an interactive circuit-board
+Every project above, written up properly, plus an interactive circuit-board
 background I probably spent too long on.
 
 [![Portfolio](https://img.shields.io/badge/✿_read_the_full_thing-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
@@ -240,7 +240,7 @@ background I probably spent too long on.
 
 | | |
 |---|---|
-| 🏆 | **1st Place — Amazon Internal Hackathon** · winner among 190+ engineers |
+| 🏆 | **1st Place, Amazon Internal Hackathon** · winner among 190+ engineers |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
 | 🎓 | **Engineering Honors** + **Engineering Honors Scholarship** · UT Austin Cockrell School |
 | ✨ | **National First-Gen Recognition** |
@@ -249,9 +249,9 @@ background I probably spent too long on.
 
 ## ✿ currently
 
-- 🌱 **learning** — how far I can push real models onto small hardware before they stop being useful
-- 💌 **looking for** — SWE / ML / embedded / edge-AI internships
-- 🎧 **outside of code** — hiking, sudoku, and a steady rotation of Raspberry Pi projects
+- 🌱 **learning**: how far I can push real models onto small hardware before they stop being useful
+- 💌 **looking for**: SWE / ML / embedded / edge-AI internships
+- 🎧 **outside of code**: hiking, sudoku, and a steady rotation of Raspberry Pi projects
 
 <br/>
 
