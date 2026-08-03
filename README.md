@@ -4,14 +4,16 @@
 <!-- Banner height trimmed 180 -> 150: it's forced to width:100%, so on GitHub's
      ~1012px column it scales up ~19% and the wave's soft bottom edge left an
      obvious gap under it. All-lowercase to match the terminal on the site. -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=150&section=header&text=hi,%20i'm%20kaitlyn%20✿&fontSize=42&fontColor=4a2540&fontAlignY=36&desc=ece%20@%20ut%20austin%20·%20prev.%20swe%20intern%20@%20aws&descSize=16&descAlignY=60&descAlign=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=150&section=header&text=hi,%20i'm%20kaitlyn%20✿&fontSize=42&fontColor=4a2540&fontAlignY=36&desc=ece%20@%20ut%20austin%20·%20prev.%20sde%20intern%20@%20aws&descSize=16&descAlignY=60&descAlign=50" width="100%" />
 
-<!-- The typing SVG is back, now with one fixed line instead of a rotation. It's
-     an image, so the words themselves can't be links — hence the <a> wrapper
-     (whole line → the site) and the badges below, which keep email reachable in
-     real clickable form. Height is a tight 45 to keep the stacked-image margin
-     under it small. -->
-<a href="https://kaitlynchen.dev"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1200&color=FFB3D1&center=true&vCenter=true&width=650&height=45&lines=want%20to%20know%20more%3F%20%E2%86%92%20kaitlynchen.dev%20%20%C2%B7%20%20or%20just%20say%20hi%20%E2%9C%BF" alt="want to know more? → kaitlynchen.dev · or just say hi ✿" /></a>
+<!-- "currently:" is real static text; only the tail animates. Two reasons that
+     beats putting the whole sentence in the SVG: the fixed word doesn't retype
+     on every loop (which is what made the old one feel busy), and the part a
+     recruiter needs most is still readable as text if images are blocked.
+     Deliberately NOT center=true — each line is a different length, so centering
+     inside the box would make the gap after "currently:" jump around. Width 560
+     fits the longest line; shorter ones just leave trailing space. -->
+<p><strong>currently:</strong> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&width=560&height=30&lines=open%20to%20summer%202027%20SWE%20%2F%20ML%20%2F%20embedded%20internships;still%20awake%20because%20the%20bug%20was%20almost%20fixed;studying%20computer%20architecture%20and%20edge%20ML" alt="open to summer 2027 SWE / ML / embedded internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" align="absmiddle" /></p>
 
 [![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
@@ -34,7 +36,7 @@
 kaitlyn = {
     "school":    "BS Electrical & Computer Engineering, UT Austin '28",
     "focus":     "Computer Architecture & Embedded Systems",
-    "prev":      "SWE Intern @ AWS — GenAI Developer Tools",
+    "prev":      "SDE Intern @ AWS — GenAI Developer Tools",
     "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
     "ask_me_about": "the last concert I went to (there are many)",
@@ -81,7 +83,7 @@ cohort-wide peer vote and then a panel of Amazon L8 senior leaders.
 
 <br/>
 
-### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SWE intern, GenAI Developer Tools*
+### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SDE intern, GenAI Developer Tools*
 
 LLM agents are normally stuck with whatever tools they booted with. I built a
 proxy that runs child MCP servers as live subprocesses, so an agent can install
