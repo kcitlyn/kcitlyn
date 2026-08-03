@@ -107,8 +107,10 @@ person. With no liveness model loaded it reports UNVERIFIED, never TRUSTED: a
 check that defaults to pass is worse than no check, because it looks like
 protection.
 
-**Liveness in 0.44 ms**, about 2% of the frame budget, on a 1.0 MB model. Also
-dropped dlib entirely, so installing it needs no compiler.
+**Liveness in 0.44 ms**, about 2% of the frame budget: 226K parameters in a
+1.0 MB model, 304 tests. Splits are subject-disjoint and a run reproduces from
+its seed down to identical weights, so a number it reports is one someone else
+could check. Also dropped dlib entirely, so installing it needs no compiler.
 
 `Python` `PyTorch` `ONNX Runtime` `CoreML` `OpenCV` `Anti-spoofing` `Edge AI`
 
