@@ -9,10 +9,9 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/✿_kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
+[![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
 [![Email](https://img.shields.io/badge/say_hi-FFC1DD?style=for-the-badge&logo=gmail&logoColor=4A2540&labelColor=FFD6E8)](mailto:kcitlynychen@gmail.com)
-![Profile views](https://komarev.com/ghpvc/?username=kcitlyn&style=for-the-badge&color=ffb3d1&label=visitors)
 
 </div>
 
@@ -92,15 +91,16 @@ flush, so observability can never add latency to — or fail — a tool call.
 
 ## ✿ things I've built
 
-<table>
-<tr>
-<td colspan="2" valign="top">
+> The full write-ups, with the engineering detail, live on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
 
-### 🏆 Ctrl+Meet &nbsp;→&nbsp; [**`github.com/kcitlyn/ctrl-meet`**](https://github.com/kcitlyn/ctrl-meet)
-# 🥇 WE WON.
+<br/>
+
+### 🥇 Ctrl+Meet — *we won the whole hackathon*
+
 **Grand prize · Amazon's internal hackathon · 190+ engineers**
+&nbsp;·&nbsp; [**`view repo →`**](https://github.com/kcitlyn/ctrl-meet)
 
-Not a track, not a category — **the whole thing.** A cohort-wide peer vote
+Not a track, not a side category — **the whole thing.** A cohort-wide peer vote
 narrowed the field, then a panel of **Amazon L8 senior leaders** named ours the
 **single best build of the entire hackathon.**
 
@@ -123,13 +123,9 @@ a localhost demo.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `Titan` `API Gateway` `CDK` `SigV4` `RAG` `Vitest`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<br/>
 
-### 🚗 Texas EcoCar
-**ML steering controller for an autonomous vehicle**
+### 🚗 Texas EcoCar — *ML steering controller for an autonomous vehicle*
 
 Replaced a gain-scheduled PID with a **Gaussian Process** controller — no more
 manual calibration, same tracking performance.
@@ -141,31 +137,26 @@ manual calibration, same tracking performance.
 
 `C/C++` `MATLAB/Simulink` `Python` `Controls`
 
-</td>
-<td width="50%" valign="top">
+<br/>
 
-### 🎙️ [PolyScribe](https://github.com/kcitlyn/PolyScribe_Desktop) ⭐13
-**Fully-offline transcription + translation**
+### 🎙️ PolyScribe — *offline transcription + translation, with real users* ⭐13
+
+[**`view repo →`**](https://github.com/kcitlyn/PolyScribe_Desktop)
 
 Speech-to-text and translation across **20+ languages**, running entirely
-locally — no cloud, no API keys, no data leaving your machine.
-
-A real-time **multithreaded producer/consumer** pipeline (audio → Vosk STT →
-Argos NMT → TTS) with structured exports and fault recovery for device/model
-failures. Model-agnostic init: download any supported language and size, and it
-handles loading and runtime setup itself.
+locally — no cloud, no API keys, no data leaving your machine. A real-time
+**multithreaded producer/consumer** pipeline (audio → Vosk STT → Argos NMT → TTS)
+with structured exports and fault recovery for device/model failures.
 
 **Open-sourced, and external users started filing feature requests.**
 
 `Python` `Vosk` `Argos` `pyttsx3`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<br/>
 
-### 🩺 [edgedoctor](https://github.com/kcitlyn/edgedoctor)
-**Why did my model break on the edge?** *(in progress)*
+### 🩺 edgedoctor — *why did my model break on the edge?*  *(in progress)*
+
+[**`view repo →`**](https://github.com/kcitlyn/edgedoctor)
 
 Profiles a model against target hardware and surfaces the *real* bottleneck —
 quantization mismatches, unsupported ops, memory pressure — instead of leaving
@@ -173,57 +164,41 @@ you to guess.
 
 `Python` `Edge AI` `ML Tooling`
 
-</td>
-<td width="50%" valign="top">
+<br/>
 
-### 🚄 Texas Guadaloop
-**Hyperloop pod firmware**
+### 🚄 Texas Guadaloop — *hyperloop pod firmware*
 
-Multi-channel **STM32** sensor acquisition using **ADC + DMA circular
-buffering** for real-time Hall-effect speed measurement, with a
-voltage-to-Gauss calibration pipeline derived from datasheet characterization.
-
-Documented the pod-wide embedded architecture — **9 distributed STM32 nodes**,
-CAN bus routing topology, and a LoRa telemetry link to the ground station — as
-the team-wide interface reference.
+Multi-channel **STM32** sensor acquisition using **ADC + DMA circular buffering**
+for real-time Hall-effect speed measurement, with a voltage-to-Gauss calibration
+pipeline derived from datasheet characterization. Documented the pod-wide
+embedded architecture — **9 distributed STM32 nodes**, CAN bus routing topology,
+and a LoRa telemetry link to the ground station — as the team-wide interface
+reference.
 
 `C` `STM32` `CAN` `ADC/DMA` `UART`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<br/>
 
-### 👤 [TrainYourFace](https://github.com/kcitlyn/TrainYourFace)
-**Offline face recognition**
+### and a few more
 
-**128-dim ResNet** embeddings with Euclidean matching for real-time multi-face
-ID — no cloud dependency. Plus a persistent embedding store and a configurable
-threshold sweep to tune false-accept vs. missed-ID per deployment environment.
+| | |
+|---|---|
+| 👤 **[TrainYourFace](https://github.com/kcitlyn/TrainYourFace)** | Real-time multi-face ID from **128-dim ResNet** embeddings, fully offline, with a tunable false-accept vs. missed-ID threshold. `Python` `OpenCV` `dlib` |
+| 🌌 **Astrarium** · *HackTX 2025* | FastAPI + PostgreSQL LLM backend with structured-output validation and timeout/fallback guards, so flaky model latency never takes the app down. `FastAPI` `PostgreSQL` `Next.js` |
+| 🍉 **Fruit Ninja on a microcontroller** | On a PCB I designed, printed, and soldered myself — because I wanted to know if I could. `ARM Cortex-M0` `C` `KiCad` |
 
-`Python` `OpenCV` `dlib`
+<div align="center">
 
-</td>
-<td width="50%" valign="top">
+<br/>
 
-### 🌌 Astrarium — *HackTX 2025*
-**LLM backend that stays up**
+### ✿ there's more on the site ✿
 
-FastAPI + PostgreSQL serving LLM-generated practice questions with
-structured-output validation, timeout/fallback guards, and structured logging so
-unreliable model latency never takes the experience down.
+Every project above, written up properly — plus an interactive circuit-board
+background I probably spent too long on.
 
-`FastAPI` `PostgreSQL` `Next.js`
+[![Portfolio](https://img.shields.io/badge/✿_read_the_full_thing-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 
-### 🍉 Fruit Ninja on a microcontroller
-**...on a PCB I made myself**
-
-Because I wanted to know if I could. Designed, printed, and soldered the board;
-wrote the firmware. `ARM Cortex-M0` `C` `KiCad`
-
-</td>
-</tr>
-</table>
+</div>
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
