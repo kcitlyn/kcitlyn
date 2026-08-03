@@ -83,8 +83,8 @@ auto-weights each question by how much it actually distinguishes people, then
 re-ranks for variety so your matches aren't five copies of you. Shipped on real
 AWS behind SSO, not localhost.
 
-**🏆 We won the whole hackathon, out of 190+ engineers**, picked by a
-cohort-wide peer vote and then a panel of Amazon L8 senior leaders.
+**🏆 We won the whole hackathon, out of 190+ engineers**, judged by
+a panel of Amazon L8 senior leaders.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `Titan` `API Gateway` `CDK` `RAG` `Vitest`
 
