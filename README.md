@@ -90,6 +90,30 @@ cohort-wide peer vote and then a panel of Amazon L8 senior leaders.
 
 <br/>
 
+### 👤 TrainYourFace &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/TrainYourFace)
+
+I built this as a webcam face-recognition tool and it worked, right up until I
+held a photo of myself to the camera and it greeted me by name. The matcher
+wasn't wrong. "Is this the right face" and "is there a person here" are just
+different questions, and answering only the first one gets you a system that
+feels secure and isn't.
+
+So it became an anti-spoofing project. A small PyTorch model learns to tell a
+live face from a printed photo or a phone screen, scored with the ISO/IEC
+30107-3 metrics the field actually reports, and recognition is gated behind it.
+Liveness runs first, so a rejected face never gets embedded, and the UI won't
+print "SPOOF, matched Kaitlyn" and tell an attacker their spoof found the right
+person. With no liveness model loaded it reports UNVERIFIED, never TRUSTED: a
+check that defaults to pass is worse than no check, because it looks like
+protection.
+
+**Liveness in 0.44 ms**, about 2% of the frame budget, on a 1.0 MB model. Also
+dropped dlib entirely, so installing it needs no compiler.
+
+`Python` `PyTorch` `ONNX Runtime` `CoreML` `OpenCV` `Anti-spoofing` `Edge AI`
+
+<br/>
+
 ### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SDE intern, GenAI Developer Tools*
 
 LLM agents are normally stuck with whatever tools they booted with. I built a
@@ -157,11 +181,10 @@ ground station — which became the doc the whole team wired against.
 
 <br/>
 
-### and a couple more
+### one more
 
 | | |
 |---|---|
-| 👤 **[TrainYourFace](https://github.com/kcitlyn/TrainYourFace)** | Real-time multi-face recognition that runs fully offline, with a tunable tradeoff between false matches and missed ones. `Python` `OpenCV` `dlib` |
 | 🌌 **Astrarium** · *HackTX 2025* | LLM backend that validates every model response and falls back gracefully, so a flaky model never takes the app down. `FastAPI` `PostgreSQL` `Next.js` |
 
 <div align="center">
@@ -201,7 +224,7 @@ background I probably spent too long on.
 
 **ML / perception**
 
-`OpenCV` · `Gaussian Process regression` · `system identification` · `real-time video inference` · `dlib` · `ResNet` · `Vosk (STT)` · `Argos (NMT)`
+`PyTorch` · `ONNX Runtime` · `CoreML` · `OpenCV` · `INT8 quantization` · `anti-spoofing / PAD` · `Gaussian Process regression` · `system identification` · `real-time video inference` · `Vosk (STT)` · `Argos (NMT)`
 
 **systems, web & cloud**
 
