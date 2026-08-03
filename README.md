@@ -52,77 +52,63 @@ explained to me, which is conveniently most of engineering.
 
 ## ✿ things I've built
 
-> Full write-ups, with the engineering detail, on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
+<!-- Every project here follows the same shape on purpose: heading → one or two
+     sentences of what it is → the single number that proves it → tags + link.
+     The old version opened with nested "matching engine / what I owned" bullet
+     lists, which is résumé density in a place people are skimming — nobody
+     reads twelve bullets on a profile page. The engineering detail didn't get
+     deleted, it moved to the site, which is where someone who wants it goes. -->
+
+> A sentence each — the **full write-ups** live on **[kaitlynchen.dev →](https://kaitlynchen.dev)**
 
 <br/>
 
-### 🥇 Ctrl+Meet
+### 🥇 Ctrl+Meet &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/ctrl-meet)
 
-**Grand prize · Amazon's internal hackathon · 190+ engineers**
-&nbsp;·&nbsp; [**`view repo →`**](https://github.com/kcitlyn/ctrl-meet)
+A cross-team matchmaking platform for interns who get flown to a new city and
+seated on heads-down teams. A 16-question survey feeds a recommender that
+auto-weights each question by how much it actually distinguishes people, then
+re-ranks for variety so your matches aren't five copies of you. Shipped on real
+AWS behind SSO, not localhost.
 
-Not a track, not a side category — **the whole thing.** A cohort-wide peer vote
-narrowed the field, then a panel of **Amazon L8 senior leaders** named ours the
-**single best build of the entire hackathon.**
+**🏆 Grand prize — the whole hackathon, out of 190+ engineers**, picked by a
+cohort-wide peer vote and then a panel of Amazon L8 senior leaders.
 
-A cross-team intern matchmaking platform, shipped on **real AWS behind SSO** — not
-a localhost demo.
-
-**The matching engine**
-- Scores candidates by **Gower similarity**
-- **Auto-weights each question by its entropy**, so questions everyone answers identically carry no signal
-- **Gumbel-top-k** sampling + **MMR re-ranking** → a genuinely varied slate, not five clones of you
-- A **93-chunk RAG** onboarding bot on Titan embeddings, guaranteed to cite a real doc
-
-**What I owned**
-- The **two-sided invite protocol** — strict sender/recipient role separation + cross-device sync, so neither side can accept its own invite
-- Read receipts that only fire on a real human open
-- Calendar booking, searchable org/city/building pickers, match filtering
-- **SigV4 hand-rolled in pure Node crypto** (post-win) — the build sandbox blocked network access, so the AWS SDK client wasn't available
-
-> 🥇 **50 of 109 commits · 138 of 157 tests** — the most of anyone on the team, on either count.
-
-`React` `Lambda` `DynamoDB` `Bedrock` `Titan` `API Gateway` `CDK` `SigV4` `RAG` `Vitest`
+`React` `Lambda` `DynamoDB` `Bedrock` `Titan` `API Gateway` `CDK` `RAG` `Vitest`
 
 <br/>
 
-### 🤖 Agent tooling at AWS — *SWE intern, GenAI Developer Tools*
+### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SWE intern, GenAI Developer Tools*
 
-LLM agents are normally stuck with whatever tools they had at startup. I built a
-proxy that **lifecycle-manages child MCP servers as live subprocesses** — so an
-agent can install a capability and use it **mid-session, no restart** — and wired
-it to a **~4,000-server enterprise registry** it can search on its own.
+LLM agents are normally stuck with whatever tools they booted with. I built a
+proxy that runs child MCP servers as live subprocesses, so an agent can install
+a capability and use it **mid-session with no restart** — then wired it to a
+~4,000-server enterprise registry it can search on its own.
 
-- **3 services, ~200 automated tests**, turning a human-only CLI into a self-service capability layer
-- BM25 + fuzzy retrieval, **~200× faster warm** (under **10ms** vs. a ~2s cold build) and capped so it can't flood the agent's context window
-- Hardened against **prompt injection and tool poisoning** under a generative-AI threat model: untrusted-output handling, allowlisting, shell-free execution, audit logging, least-privilege tool scoping
+**3 services, ~200 tests, and warm tool lookups under 10ms** (down from ~2s
+cold), hardened against prompt injection and tool poisoning.
 
 `TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `Bedrock` `CDK` `CloudWatch`
 
 <br/>
 
-### 🚗 Texas EcoCar — *ML steering controller for an autonomous vehicle*
+### 🚗 Texas EcoCar &nbsp;·&nbsp; *ML steering controller for an autonomous vehicle*
 
-Replaced a gain-scheduled PID with a **Gaussian Process** controller — no more
-manual calibration, same tracking performance.
+Replaced the hand-tuned PID steering controller on UT's autonomous vehicle with
+a Gaussian Process model — no manual calibration, same tracking quality. The
+nice part: the GP reports its own uncertainty, so the car can tell when it's
+outside what it was trained on and fall back before that becomes a problem.
 
-- **0.23 m RMSE** lane tracking
-- Plant model trained on 1,500 samples in **26 s** → **0.0004 rad** accuracy
-- Used the GP's *own* prediction variance as a live confidence metric: an **11,600× variance spike** flags out-of-envelope operation and triggers automatic fallback to proportional control
-- **678,000-point** system-ID pipeline (6 speeds × 4 maneuvers); uncertainty bounds validated at **100% coverage within 2σ**
+**0.23 m RMSE lane tracking**, trained on a 678,000-point system-ID pipeline.
 
 `C/C++` `MATLAB/Simulink` `Python` `Controls`
 
 <br/>
 
-### 🎙️ PolyScribe — *offline transcription + translation, with real users* ⭐13
+### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe_Desktop) &nbsp;⭐13
 
-[**`view repo →`**](https://github.com/kcitlyn/PolyScribe_Desktop)
-
-Speech-to-text and translation across **20+ languages**, running entirely
-locally — no cloud, no API keys, no data leaving your machine. A real-time
-**multithreaded producer/consumer** pipeline (audio → Vosk STT → Argos NMT → TTS)
-with structured exports and fault recovery for device/model failures.
+Speech-to-text and translation across **20+ languages**, running entirely on
+your own machine — no cloud, no API keys, nothing leaving the device.
 
 **Open-sourced, and strangers started filing feature requests** — still the most
 fun feedback I've gotten.
@@ -131,26 +117,22 @@ fun feedback I've gotten.
 
 <br/>
 
-### 🩺 edgedoctor — *why did my model break on the edge?*  *(in progress)*
+### 🩺 edgedoctor &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/edgedoctor) &nbsp;*(in progress)*
 
-[**`view repo →`**](https://github.com/kcitlyn/edgedoctor)
-
-Profiles a model against target hardware and surfaces the *real* bottleneck —
-quantization mismatches, unsupported ops, memory pressure — instead of leaving
-you to guess.
+Tells you why your model got slow or broke once you put it on real edge
+hardware — quantization mismatches, unsupported ops, memory pressure — instead
+of leaving you to guess.
 
 `Python` `Edge AI` `ML Tooling`
 
 <br/>
 
-### 🚄 Texas Guadaloop — *hyperloop pod firmware*
+### 🚄 Texas Guadaloop &nbsp;·&nbsp; *hyperloop pod firmware*
 
-Multi-channel **STM32** sensor acquisition using **ADC + DMA circular buffering**
-for real-time Hall-effect speed measurement, with a voltage-to-Gauss calibration
-pipeline derived from datasheet characterization. Documented the pod-wide
-embedded architecture — **9 distributed STM32 nodes**, CAN bus routing topology,
-and a LoRa telemetry link to the ground station — as the team-wide interface
-reference.
+Real-time Hall-effect speed sensing on **STM32**, using ADC with DMA circular
+buffering so samples never get dropped. I also wrote the pod-wide embedded
+architecture reference — 9 distributed nodes, CAN routing, LoRa link to the
+ground station — which became the doc the whole team wired against.
 
 `C` `STM32` `CAN` `ADC/DMA` `UART`
 
@@ -160,8 +142,8 @@ reference.
 
 | | |
 |---|---|
-| 👤 **[TrainYourFace](https://github.com/kcitlyn/TrainYourFace)** | Real-time multi-face ID from **128-dim ResNet** embeddings, fully offline, with a tunable false-accept vs. missed-ID threshold. `Python` `OpenCV` `dlib` |
-| 🌌 **Astrarium** · *HackTX 2025* | FastAPI + PostgreSQL LLM backend with structured-output validation and timeout/fallback guards, so flaky model latency never takes the app down. `FastAPI` `PostgreSQL` `Next.js` |
+| 👤 **[TrainYourFace](https://github.com/kcitlyn/TrainYourFace)** | Real-time multi-face recognition that runs fully offline, with a tunable tradeoff between false matches and missed ones. `Python` `OpenCV` `dlib` |
+| 🌌 **Astrarium** · *HackTX 2025* | LLM backend that validates every model response and falls back gracefully, so a flaky model never takes the app down. `FastAPI` `PostgreSQL` `Next.js` |
 
 <div align="center">
 
