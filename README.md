@@ -41,7 +41,7 @@
 
 ```python
 kaitlyn = {
-    "school":    "BS Electrical & Computer Engineering, UT Austin '28",
+    "school":    "BS Electrical & Computer Engineering, UT Austin",
     "focus":     "Computer Architecture & Embedded Systems",
     "prev":      "SDE Intern @ AWS — GenAI Developer Tools",
     "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
