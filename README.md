@@ -242,4 +242,6 @@ or to hear about a project you're excited about.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f9a8d4,50:ffb3d1,100:ffd6e8&height=120&section=footer&text=thanks%20for%20scrolling%20✿&fontSize=20&fontColor=4a2540&fontAlignY=72" width="100%" />
 
+<sub>made with 💗 by kaitlyn — hand-written markdown, no generator</sub>
+
 </div>
