@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=180&section=header&text=hi,%20I'm%20Kaitlyn%20✿&fontSize=44&fontColor=4a2540&fontAlignY=34&desc=ECE%20@%20UT%20Austin%20·%20I%20make%20software%20touch%20the%20real%20world&descSize=16&descAlignY=56&descAlign=50" width="100%" />
 
 <a href="https://kaitlynchen.dev">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=ECE+%40+UT+Austin+%C2%B7+prev.+SWE+Intern+%40+AWS;I+build+agent+runtimes+and+STM32+firmware;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=21&duration=3400&pause=900&color=F9A8D4&center=true&vCenter=true&width=650&lines=ECE+%40+UT+Austin+%C2%B7+prev.+SWE+Intern+%40+AWS;I+build+agent+runtimes+and+STM32+firmware;1st+place+%F0%9F%8F%86+Amazon+hackathon+%C2%B7+190%2B+engineers;close+to+the+metal%2C+curious+about+the+models" alt="what I do" />
 </a>
 
 <br/>
@@ -15,16 +15,10 @@
 
 </div>
 
-<!-- The skim-in-five-seconds strip. Each line is a complete claim on its own —
-     a bare number with a three-word caption means nothing to someone who
-     hasn't read the rest. Left-aligned: centered sentences read ragged.
-     Deliberately only three, and phrased differently from the project write-ups
-     below, so this is a summary rather than an echo. -->
-🏆 &nbsp; **Won 1st place at Amazon's internal hackathon**, out of 190+ competing engineers
-
-🤖 &nbsp; **Made a ~4,000-server enterprise registry usable by AI agents** as an SWE intern at AWS
-
-🚗 &nbsp; **Replaced a car's hand-tuned steering controller with a machine-learning one** on UT's autonomous vehicle team, and it tracked the lane just as well
+<!-- No stats/highlights strip here on purpose: it restated the project cards
+     below almost verbatim, and a bare metric with a three-word caption reads as
+     jargon to anyone who hasn't already seen the resume. The projects section
+     makes the same points once, with the context that makes them land. -->
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
