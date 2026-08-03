@@ -105,13 +105,20 @@ outside what it was trained on and fall back before that becomes a problem.
 
 <br/>
 
-### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe_Desktop) &nbsp;⭐13
+### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe_Desktop)
+
+<!-- Live badges, not hardcoded numbers: shields.io reads the GitHub API on every
+     page load, so these can't quietly go stale the way "⭐13" would the moment
+     someone else stars it. -->
+[![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe_Desktop?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/stargazers)
+[![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe_Desktop?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/forks)
 
 Speech-to-text and translation across **20+ languages**, running entirely on
 your own machine — no cloud, no API keys, nothing leaving the device.
 
-**Open-sourced, and strangers started filing feature requests** — still the most
-fun feedback I've gotten.
+**People I've never met found it, starred it, forked it, and started filing
+feature requests.** Nobody asked them to — still the most fun feedback I've
+gotten.
 
 `Python` `Vosk` `Argos` `pyttsx3`
 
