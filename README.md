@@ -47,7 +47,7 @@ kaitlyn = {
     "lives_in":  "Austin, TX (school year)  ·  Houston, TX (home)",
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
     "ask_me_about": "the last concert I went to (there are many)",
-    "highlight": "1st place at Amazon's internal hackathon — 190+ engineers, "
+    "fun_fact":  "1st place at Amazon's internal hackathon — 190+ engineers, "
                  "judged by a panel of L8 senior leaders 🏆",
 }
 ```
