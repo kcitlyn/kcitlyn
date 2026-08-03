@@ -3,12 +3,15 @@
 
 <!-- Banner height trimmed 180 -> 150: it's forced to width:100%, so on GitHub's
      ~1012px column it scales up ~19% and the wave's soft bottom edge left an
-     obvious gap under it. The rotating typing-SVG that used to sit here is gone
-     for the same reason — two stacked images meant a <p> margin between them,
-     and a static text line can be a real clickable CTA instead of a picture. -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=150&section=header&text=hi,%20I'm%20Kaitlyn%20✿&fontSize=42&fontColor=4a2540&fontAlignY=36&desc=ECE%20@%20UT%20Austin%20·%20prev.%20SWE%20Intern%20@%20AWS&descSize=16&descAlignY=60&descAlign=50" width="100%" />
+     obvious gap under it. All-lowercase to match the terminal on the site. -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd6e8,50:ffb3d1,100:f9a8d4&height=150&section=header&text=hi,%20i'm%20kaitlyn%20✿&fontSize=42&fontColor=4a2540&fontAlignY=36&desc=ece%20@%20ut%20austin%20·%20prev.%20swe%20intern%20@%20aws&descSize=16&descAlignY=60&descAlign=50" width="100%" />
 
-**want to know more? → [kaitlynchen.dev](https://kaitlynchen.dev)** &nbsp;·&nbsp; or just [say hi](mailto:kcitlynychen@gmail.com) ✿
+<!-- The typing SVG is back, now with one fixed line instead of a rotation. It's
+     an image, so the words themselves can't be links — hence the <a> wrapper
+     (whole line → the site) and the badges below, which keep email reachable in
+     real clickable form. Height is a tight 45 to keep the stacked-image margin
+     under it small. -->
+<a href="https://kaitlynchen.dev"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1200&color=FFB3D1&center=true&vCenter=true&width=650&height=45&lines=want%20to%20know%20more%3F%20%E2%86%92%20kaitlynchen.dev%20%20%C2%B7%20%20or%20just%20say%20hi%20%E2%9C%BF" alt="want to know more? → kaitlynchen.dev · or just say hi ✿" /></a>
 
 [![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
