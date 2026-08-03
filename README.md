@@ -79,7 +79,7 @@ Cross-team matchmaking for interns flown to a new city and seated on heads-down
 teams. A 16-question survey feeds a recommender that weights each question by how
 much it actually distinguishes people. Shipped on real AWS behind SSO.
 
-**🏆 We won the whole hackathon, out of 190+ engineers**, judged by a panel of
+**🏆 Won the entire hackathon, out of 190+ engineers**, judged by a panel of
 Amazon L8 senior leaders.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `RAG` `CDK`
