@@ -13,8 +13,14 @@
      amount of markup fixes the mismatch or the word-space gap between a text
      node and an inline image. Inside the SVG, one text element draws the whole
      line, so the alignment problem can't exist. Cost: the prefix retypes each
-     loop, which is the right trade for it actually matching. -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&center=true&vCenter=true&width=650&height=40&lines=currently%3A%20open%20to%20summer%202027%20SWE%20%2F%20ML%20%2F%20embedded%20internships;currently%3A%20still%20awake%20because%20the%20bug%20was%20almost%20fixed;currently%3A%20studying%20computer%20architecture%20and%20edge%20ML" alt="currently: open to summer 2027 SWE / ML / embedded internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" />
+     loop, which is the right trade for it actually matching.
+
+     width MUST clear the longest line or center=true overflows both edges and
+     clips the first character. Fira Code is monospace at 0.6em advance, so the
+     math is chars x size x 0.6: the internships line is 62 chars x 18 x 0.6 =
+     ~670px, which is why 650 cut the "c" off. 720 leaves ~50px of slack. If you
+     add a longer line, re-run that multiplication first. -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&center=true&vCenter=true&width=720&height=40&lines=currently%3A%20open%20to%20summer%202027%20SWE%20%2F%20ML%20%2F%20embedded%20internships;currently%3A%20still%20awake%20because%20the%20bug%20was%20almost%20fixed;currently%3A%20studying%20computer%20architecture%20and%20edge%20ML" alt="currently: open to summer 2027 SWE / ML / embedded internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" />
 
 [![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
