@@ -48,7 +48,7 @@ kaitlyn = {
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
     "ask_me_about": "the last concert I went to (there are many)",
     "fun_fact":  "1st place at Amazon's internal hackathon: 190+ engineers, "
-                 "judged by a panel of Amazon directors 🏆",
+                 "judged by a panel of Amazon L8 directors 🏆",
 }
 ```
 
@@ -78,7 +78,7 @@ explained to me, which is conveniently most of engineering.
 LLM agents are stuck with whatever tools they booted with. I designed and shipped
 a proxy that runs child MCP servers as live subprocesses, so an agent reaches into
 a ~4,000-server enterprise registry, pulls the one tool it needs, and uses it
-**mid-session with no restart** — plus the telemetry service behind it, a Java
+**mid-session with no restart**, plus the telemetry service behind it: a Java
 Lambda feeding CloudWatch dashboards.
 
 Then I benchmarked it. My own 26-scenario eval suite took the agent from a **22%
@@ -87,8 +87,8 @@ my server doesn't degrade the one it runs alongside. My favorite result argues
 against my own instinct: preloading tools *costs* 8 points, because an agent
 already holding a close-enough tool stops looking for the right one.
 
-**70% less idle context — 58K tokens down to 17K** — a tax the preloaded agent
-pays every turn whether it uses those tools or not. 3 services, 369 tests, warm
+**70% less idle context, 58K tokens down to 17K.** That's a tax the preloaded
+agent pays every turn whether it uses those tools or not. 3 services, 369 tests, warm
 lookups under 10ms, hardened against prompt injection and tool poisoning.
 
 `TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `CloudWatch` `CDK`
@@ -101,9 +101,9 @@ Cross-team matchmaking for interns flown to a new city and seated on heads-down
 teams. A 16-question survey feeds a recommender that weights each question by how
 much it actually distinguishes people. Shipped on real AWS behind SSO.
 
-**🏆 Won the entire hackathon, out of 190+ engineers** — cleared a cohort-wide
-peer vote, then a panel of Amazon directors picked it as the best build in the
-field.
+**🏆 Won the entire hackathon, out of 190+ engineers.** Cleared a cohort-wide
+peer vote, then a panel of Amazon L8 directors picked it as the best build in
+the field.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `RAG` `CDK`
 
@@ -134,16 +134,17 @@ uncertainty, so the car can tell when it's outside what it was trained on.
 
 <br/>
 
-### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe_Desktop)
+### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe)
 
-[![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe_Desktop?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/stargazers)
-[![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe_Desktop?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe_Desktop/forks)
+[![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/stargazers)
+[![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/forks)
 
 Speech-to-text and translation across **20+ languages**, running entirely on your
 own machine. No cloud, no API keys, nothing leaving the device.
 
 **Strangers found it, starred it, forked it, and started filing feature
-requests.** Still the most fun feedback I've gotten.
+requests**, none of them people I know or ever asked. Maintaining something other
+people actually depend on is still the most fun feedback I've gotten.
 
 `Python` `Vosk` `Argos`
 
