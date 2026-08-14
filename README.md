@@ -73,6 +73,28 @@ explained to me, which is conveniently most of engineering.
 
 <br/>
 
+### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SDE Intern, GenAI Developer Tools*
+
+LLM agents are stuck with whatever tools they booted with. I designed and shipped
+a proxy that runs child MCP servers as live subprocesses, so an agent reaches into
+a ~4,000-server enterprise registry, pulls the one tool it needs, and uses it
+**mid-session with no restart** — plus the telemetry service behind it, a Java
+Lambda feeding CloudWatch dashboards.
+
+Then I benchmarked it. My own 26-scenario eval suite took the agent from a **22%
+baseline to 79%**, and I adapted the platform's 120-scenario golden suite to prove
+my server doesn't degrade the one it runs alongside. My favorite result argues
+against my own instinct: preloading tools *costs* 8 points, because an agent
+already holding a close-enough tool stops looking for the right one.
+
+**70% less idle context — 58K tokens down to 17K** — a tax the preloaded agent
+pays every turn whether it uses those tools or not. 3 services, 369 tests, warm
+lookups under 10ms, hardened against prompt injection and tool poisoning.
+
+`TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `CloudWatch` `CDK`
+
+<br/>
+
 ### 🥇 Ctrl+Meet &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/ctrl-meet)
 
 Cross-team matchmaking for interns flown to a new city and seated on heads-down
@@ -96,19 +118,6 @@ holding up a picture of me doesn't unlock anything.
 metrics the field actually reports.
 
 `Python` `PyTorch` `ONNX Runtime` `CoreML` `Anti-spoofing` `Edge AI`
-
-<br/>
-
-### 🤖 Agent tooling at AWS &nbsp;·&nbsp; *SDE intern, GenAI Developer Tools*
-
-LLM agents are normally stuck with whatever tools they booted with. I built a
-proxy that runs child MCP servers as live subprocesses, so an agent can install a
-capability and use it **mid-session with no restart**.
-
-**3 services, ~200 tests, warm tool lookups under 10ms**, hardened against
-prompt injection and tool poisoning.
-
-`TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `Bedrock` `CDK`
 
 <br/>
 
@@ -184,7 +193,7 @@ background I probably spent too long on.
 
 **AI / agentic**
 
-`MCP (Model Context Protocol)` · `LLM agents` · `RAG` · `prompt engineering` · `evals & benchmarking` · `structured-output validation` · `prompt-injection defense`
+`MCP (Model Context Protocol)` · `LLM agents` · `RAG` · `prompt engineering` · `agent evals & benchmarking` · `LLM-as-judge` · `pass@k` · `structured-output validation` · `prompt-injection defense`
 
 **embedded & hardware**
 
