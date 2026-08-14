@@ -48,7 +48,7 @@ kaitlyn = {
     "works_on":  ["agentic AI tooling", "embedded systems", "edge ML"],
     "ask_me_about": "the last concert I went to (there are many)",
     "fun_fact":  "1st place at Amazon's internal hackathon: 190+ engineers, "
-                 "judged by a panel of L8 senior leaders 🏆",
+                 "judged by a panel of Amazon directors 🏆",
 }
 ```
 
@@ -101,8 +101,9 @@ Cross-team matchmaking for interns flown to a new city and seated on heads-down
 teams. A 16-question survey feeds a recommender that weights each question by how
 much it actually distinguishes people. Shipped on real AWS behind SSO.
 
-**🏆 Won the entire hackathon, out of 190+ engineers**, judged by a panel of
-Amazon L8 senior leaders.
+**🏆 Won the entire hackathon, out of 190+ engineers** — cleared a cohort-wide
+peer vote, then a panel of Amazon directors picked it as the best build in the
+field.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `RAG` `CDK`
 
