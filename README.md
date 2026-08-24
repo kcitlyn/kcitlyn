@@ -26,7 +26,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
 [![Email](https://img.shields.io/badge/say_hi-FFC1DD?style=for-the-badge&logo=gmail&logoColor=4A2540&labelColor=FFD6E8)](mailto:kcitlynychen@gmail.com)
 
-<sub>made with 💗 by kaitlyn · hand-written markdown, no generator</sub>
+<sub>made with 💗 by kaitlyn</sub>
 
 </div>
 
@@ -91,6 +91,9 @@ already holding a close-enough tool stops looking for the right one.
 agent pays every turn whether it uses those tools or not. 3 services, 369 tests, warm
 lookups under 10ms, hardened against prompt injection and tool poisoning.
 
+**🏅 People's Choice Award at Amazon's AI Intern Expo**, voted by the engineers
+who came by the booth.
+
 `TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `CloudWatch` `CDK`
 
 <br/>
@@ -106,6 +109,22 @@ peer vote, then a panel of Amazon L8 directors picked it as the best build in
 the field.
 
 `React` `Lambda` `DynamoDB` `Bedrock` `RAG` `CDK`
+
+<br/>
+
+### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe)
+
+[![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/stargazers)
+[![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/forks)
+
+Speech-to-text and translation across **20+ languages**, running entirely on your
+own machine. No cloud, no API keys, nothing leaving the device.
+
+**Strangers found it, starred it, forked it, and started filing feature
+requests**, none of them people I know or ever asked. Maintaining something other
+people actually depend on is still the most fun feedback I've gotten.
+
+`Python` `Vosk` `Argos`
 
 <br/>
 
@@ -131,22 +150,6 @@ uncertainty, so the car can tell when it's outside what it was trained on.
 **0.23 m RMSE lane tracking**, trained on a 678,000-point system-ID pipeline.
 
 `C/C++` `MATLAB/Simulink` `Python` `Controls`
-
-<br/>
-
-### 🎙️ PolyScribe &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/PolyScribe)
-
-[![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/stargazers)
-[![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/forks)
-
-Speech-to-text and translation across **20+ languages**, running entirely on your
-own machine. No cloud, no API keys, nothing leaving the device.
-
-**Strangers found it, starred it, forked it, and started filing feature
-requests**, none of them people I know or ever asked. Maintaining something other
-people actually depend on is still the most fun feedback I've gotten.
-
-`Python` `Vosk` `Argos`
 
 <br/>
 
@@ -222,6 +225,7 @@ background I probably spent too long on.
 | | |
 |---|---|
 | 🏆 | **1st Place, Amazon Internal Hackathon** · winner among 190+ engineers |
+| 🏅 | **People's Choice Award, Amazon AI Intern Expo** · voted by attending engineers |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
 | 🎓 | **Engineering Honors** + **Engineering Honors Scholarship** · UT Austin Cockrell School |
 | ✨ | **National First-Gen Recognition** |
