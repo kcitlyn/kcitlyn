@@ -154,7 +154,7 @@ uncertainty, so the car can tell when it's outside what it was trained on.
 
 <br/>
 
-### 🚄 Texas Guadaloop &nbsp;·&nbsp; *hyperloop pod, CAN integration lead*
+### 🚄 Texas Guadaloop &nbsp;·&nbsp; *embedded systems engineer, hyperloop pod*
 
 Leading CAN bus integration for UT's hyperloop pod: 9 control units and 3 hub
 units, with hubs aggregating the sensors and control units driving levitation,
