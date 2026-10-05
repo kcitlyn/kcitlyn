@@ -154,6 +154,22 @@ uncertainty, so the car can tell when it's outside what it was trained on.
 
 <br/>
 
+### 🚄 Texas Guadaloop &nbsp;·&nbsp; *hyperloop pod, CAN integration lead*
+
+Leading CAN bus integration for UT's hyperloop pod: 9 control units and 3 hub
+units, with hubs aggregating the sensors and control units driving levitation,
+propulsion, and power, all sequenced by a pod FSM the team designs together.
+
+**Found the bugs by reading the firmware**: an unbounded index into a CAN
+receive buffer, a clock-tree error putting the bus at 875 kbit/s against a
+500 kbit/s spec, and a sensor loop running at 4.7 Hz against a 100 Hz target.
+Then wrote the requirements so they can't come back: 14 of them, each tied to
+the failure it prevents.
+
+`C` `STM32` `CAN` `ADC/DMA` `UART`
+
+<br/>
+
 ### 🐱 Cat Ninja &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/319k-final)
 
 Fruit Ninja on a microcontroller: a slicing game in bare-metal C/C++ on a TI
