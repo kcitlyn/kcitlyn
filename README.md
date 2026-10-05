@@ -41,6 +41,7 @@
 
 ```python
 kaitlyn = {
+    "name":      "Kaitlyn Y. Chen",
     "school":    "BS Electrical & Computer Engineering, UT Austin",
     "focus":     "Computer Architecture & Embedded Systems",
     "prev":      "SDE Intern @ AWS · GenAI Developer Tools",
@@ -91,10 +92,9 @@ already holding a close-enough tool stops looking for the right one.
 agent pays every turn whether it uses those tools or not. 3 services, 369 tests, warm
 lookups under 10ms, hardened against prompt injection and tool poisoning.
 
-**🏅 People's Choice Award at Amazon's AI Intern Expo**, voted by the engineers
-who came by the booth.
+**🏅 People's Choice Award at Amazon's AI Intern Expo.**
 
-`TypeScript` `Java` `MCP` `Lambda` `DynamoDB` `CloudWatch` `CDK`
+`TypeScript` `Java` `MCP` `Lambda` `CloudWatch`
 
 <br/>
 
@@ -117,8 +117,8 @@ the field.
 [![Stars](https://img.shields.io/github/stars/kcitlyn/PolyScribe?style=flat-square&label=stars&color=FFB3D1&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/stargazers)
 [![Forks](https://img.shields.io/github/forks/kcitlyn/PolyScribe?style=flat-square&label=forks&color=F9A8D4&labelColor=FFD6E8)](https://github.com/kcitlyn/PolyScribe/forks)
 
-Speech-to-text and translation across **20+ languages**, running entirely on your
-own machine. No cloud, no API keys, nothing leaving the device.
+Speech-to-text and translation across **34 languages, 76 models**, running
+entirely on your own machine. No cloud, no API keys, nothing leaving the device.
 
 **Strangers found it, starred it, forked it, and started filing feature
 requests**, none of them people I know or ever asked. Maintaining something other
@@ -134,8 +134,9 @@ Face recognition that knows when it's being fooled. A liveness model tells a rea
 face from a photo or a phone screen, and recognition is gated behind it, so
 holding up a picture of me doesn't unlock anything.
 
-**Liveness in 0.44 ms** on a 1.0 MB model, scored with the ISO/IEC 30107-3
-metrics the field actually reports.
+**Liveness in 0.44 ms** on a 1.0 MB model, 1.3% of a 30 fps frame budget
+(ONNX Runtime, CoreML execution provider, Apple M-series), scored with the
+ISO/IEC 30107-3 metrics the field actually reports. 421 tests.
 
 `Python` `PyTorch` `ONNX Runtime` `CoreML` `Anti-spoofing` `Edge AI`
 
@@ -153,12 +154,28 @@ uncertainty, so the car can tell when it's outside what it was trained on.
 
 <br/>
 
+### 🐱 Cat Ninja &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/319k-final)
+
+Fruit Ninja on a microcontroller: a slicing game in bare-metal C/C++ on a TI
+MSPM0G3507 (ARM Cortex-M0+), running on a PCB I designed and soldered myself.
+Final project for ECE 319H, built with a lab partner.
+
+**30 Hz game engine with no OS underneath**: an 8-state FSM, two ST7735 LCDs on
+one SPI bus, joystick and slide pot on a sequenced ADC, and 11 kHz audio out of
+a 5-bit DAC.
+
+`C/C++` `TI MSPM0` `ARM Cortex-M0+` `SPI` `ADC` `DAC` `PCB design`
+
+<br/>
+
 ### 🩺 edgedoctor &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/edgedoctor) &nbsp;*(in progress)*
 
-Tells you why your model broke or got slow once you put it on real edge hardware,
-instead of leaving you to guess.
+Diagnoses why a model fails or degrades when deployed to edge hardware, from
+TensorRT build logs, Polygraphy accuracy comparisons, and ONNX Runtime profiles.
+v0.1: TensorRT and ONNX Runtime backends working; real-hardware validation in
+progress.
 
-`Python` `Edge AI` `ML Tooling`
+`Python` `TensorRT` `ONNX Runtime` `Edge AI` `ML Tooling`
 
 <br/>
 
@@ -225,7 +242,7 @@ background I probably spent too long on.
 | | |
 |---|---|
 | 🏆 | **1st Place, Amazon Internal Hackathon** · winner among 190+ engineers |
-| 🏅 | **People's Choice Award, Amazon AI Intern Expo** · voted by attending engineers |
+| 🏅 | **People's Choice Award, Amazon AI Intern Expo** |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
 | 🎓 | **Engineering Honors** + **Engineering Honors Scholarship** · UT Austin Cockrell School |
 | ✨ | **National First-Gen Recognition** |
@@ -235,7 +252,7 @@ background I probably spent too long on.
 ## ✿ currently
 
 - 🌱 **learning**: how far I can push real models onto small hardware before they stop being useful
-- 💌 **looking for**: SWE / ML / embedded / edge-AI internships
+- 💌 **looking for**: Summer 2027 SWE / ML / embedded / edge-AI internships
 - 🎧 **outside of code**: hiking, sudoku, and a steady rotation of Raspberry Pi projects
 
 <br/>
