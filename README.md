@@ -17,10 +17,10 @@
 
      width MUST clear the longest line or center=true overflows both edges and
      clips the first character. Fira Code is monospace at 0.6em advance, so the
-     math is chars x size x 0.6: the internships line is 62 chars x 18 x 0.6 =
-     ~670px, which is why 650 cut the "c" off. 720 leaves ~50px of slack. If you
+     math is chars x size x 0.6: the internships line is 63 chars x 18 x 0.6 =
+     ~680px, which is why 650 cut the "c" off. 720 leaves ~50px of slack. If you
      add a longer line, re-run that multiplication first. -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&center=true&vCenter=true&width=720&height=40&lines=currently%3A%20open%20to%20summer%202027%20SWE%20%2F%20ML%20%2F%20embedded%20internships;currently%3A%20still%20awake%20because%20the%20bug%20was%20almost%20fixed;currently%3A%20studying%20computer%20architecture%20and%20edge%20ML" alt="currently: open to summer 2027 SWE / ML / embedded internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&center=true&vCenter=true&width=720&height=40&lines=currently%3A%20open%20to%20spring%202027%20co-ops%20%26%20summer%202028%20internships;currently%3A%20still%20awake%20because%20the%20bug%20was%20almost%20fixed;currently%3A%20studying%20computer%20architecture%20and%20edge%20ML" alt="currently: open to spring 2027 co-ops & summer 2028 internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" />
 
 [![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
@@ -83,8 +83,7 @@ a ~4,000-server enterprise registry, pulls the one tool it needs, and uses it
 Lambda feeding CloudWatch dashboards.
 
 Then I benchmarked it. My own 26-scenario eval suite took the agent from a **22%
-baseline to 79%**, and I adapted the platform's 120-scenario golden suite to prove
-my server doesn't degrade the one it runs alongside. My favorite result argues
+baseline to 79%**. My favorite result argues
 against my own instinct: preloading tools *costs* 8 points, because an agent
 already holding a close-enough tool stops looking for the right one.
 
@@ -154,25 +153,26 @@ uncertainty, so the car can tell when it's outside what it was trained on.
 
 <br/>
 
-### 🚄 Texas Guadaloop &nbsp;·&nbsp; *embedded systems engineer, hyperloop pod*
+### 🚄 Texas Guadaloop &nbsp;·&nbsp; *embedded software engineer, hyperloop pod*
 
-Leading CAN bus integration for UT's hyperloop pod: 9 control units and 3 hub
-units, with hubs aggregating the sensors and control units driving levitation,
-propulsion, and power, all sequenced by a pod FSM the team designs together.
+Writing the vehicle control unit firmware for UT's hyperloop pod: an STM32F411
+that turns 11 nodes' CAN telemetry into the pod's FSM state and packs each
+subsystem's commands, down to propulsion PWM duty cycle and polarity bits.
+Restructuring the fault-handling FSM with the levitation, propulsion, and power
+subteams: recalibrate what's recoverable, emergency-brake on the rest.
 
-**Found the bugs by reading the firmware**: an unbounded index into a CAN
-receive buffer, a clock-tree error putting the bus at 875 kbit/s against a
-500 kbit/s spec, and a sensor loop running at 4.7 Hz against a 100 Hz target.
-Then wrote the requirements so they can't come back: 14 of them, each tied to
-the failure it prevents.
+**Found the bugs by reading the firmware**: sensor hubs running at 4.7 Hz against
+a 100 Hz target (a 200 ms delay plus a blocking UART call), and an unbounded
+index that could overrun the 48-frame CAN receive buffer. Co-designed the 11-bit
+CAN ID layout so higher-priority messages always win arbitration.
 
-`C` `STM32` `CAN` `ADC/DMA` `UART`
+`C` `STM32` `CAN` `ADC/DMA` `SPI` `MAX31865`
 
 <br/>
 
-### 🐱 Cat Ninja &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/319k-final)
+### 🐱 Cat Ninja: Fruit Ninja on bare-metal MSPM0 &nbsp;·&nbsp; [`repo →`](https://github.com/kcitlyn/319k-final)
 
-Fruit Ninja on a microcontroller: a slicing game in bare-metal C/C++ on a TI
+A slicing game in bare-metal C/C++ on a TI
 MSPM0G3507 (ARM Cortex-M0+), running on a PCB I designed and soldered myself.
 Final project for ECE 319H, built with a lab partner.
 
@@ -261,14 +261,13 @@ background I probably spent too long on.
 | 🏅 | **People's Choice Award, Amazon AI Intern Expo** |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
 | 🎓 | **Engineering Honors** + **Engineering Honors Scholarship** · UT Austin Cockrell School |
-| ✨ | **National First-Gen Recognition** |
 
 <!-- ✿ ─────────────────────────────────────────────────────────────── ✿ -->
 
 ## ✿ currently
 
 - 🌱 **learning**: how far I can push real models onto small hardware before they stop being useful
-- 💌 **looking for**: Summer 2027 SWE / ML / embedded / edge-AI internships
+- 💌 **looking for**: Spring 2027 co-ops & Summer 2028 internships in SWE / ML / embedded / edge AI
 - 🎧 **outside of code**: hiking, sudoku, and a steady rotation of Raspberry Pi projects
 
 <br/>
