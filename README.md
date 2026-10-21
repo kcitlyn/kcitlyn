@@ -161,6 +161,9 @@ subsystem's commands, down to propulsion PWM duty cycle and polarity bits.
 Restructuring the fault-handling FSM with the levitation, propulsion, and power
 subteams: recalibrate what's recoverable, emergency-brake on the rest.
 
+**🏆 The team took 1st in Overall Engineering Design at European Hyperloop Week
+2026**, the world's largest hyperloop competition.
+
 **Found the bugs by reading the firmware**: sensor hubs running at 4.7 Hz against
 a 100 Hz target (a 200 ms delay plus a blocking UART call), and an unbounded
 index that could overrun the 48-frame CAN receive buffer. Co-designed the 11-bit
@@ -258,6 +261,7 @@ background I probably spent too long on.
 | | |
 |---|---|
 | 🏆 | **1st Place, Amazon Internal Hackathon** · winner among 190+ engineers |
+| 🚄 | **European Hyperloop Week 2026, Texas Guadaloop** · 1st, Overall Engineering Design **&** 1st, Highest Overall Engineering & Research Score (team award, teams from 3 continents) |
 | 🏅 | **People's Choice Award, Amazon AI Intern Expo** |
 | 🌸 | **NCWIT Aspirations in Computing** · National Honorable Mention **&** Houston Affiliate Winner |
 | 🎓 | **Engineering Honors** + **Engineering Honors Scholarship** · UT Austin Cockrell School |
