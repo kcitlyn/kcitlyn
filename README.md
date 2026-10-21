@@ -20,7 +20,7 @@
      math is chars x size x 0.6: the internships line is 63 chars x 18 x 0.6 =
      ~680px, which is why 650 cut the "c" off. 720 leaves ~50px of slack. If you
      add a longer line, re-run that multiplication first. -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&center=true&vCenter=true&width=720&height=40&lines=currently%3A%20open%20to%20spring%202027%20co-ops%20%26%20summer%202028%20internships;currently%3A%20still%20awake%20because%20the%20bug%20was%20almost%20fixed;currently%3A%20studying%20computer%20architecture%20and%20edge%20ML" alt="currently: open to spring 2027 co-ops & summer 2028 internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1600&color=FFB3D1&center=true&vCenter=true&width=720&height=40&lines=currently%3A%20open%20to%20spring%202027%20co-ops%20%26%20summer%202027%20internships;currently%3A%20still%20awake%20because%20the%20bug%20was%20almost%20fixed;currently%3A%20studying%20computer%20architecture%20and%20edge%20ML" alt="currently: open to spring 2027 co-ops & summer 2027 internships · still awake because the bug was almost fixed · studying computer architecture and edge ML" />
 
 [![Portfolio](https://img.shields.io/badge/✿_my_portfolio-kaitlynchen.dev-FFB3D1?style=for-the-badge&logoColor=4A2540&labelColor=FFD6E8)](https://kaitlynchen.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-F9A8D4?style=for-the-badge&logo=linkedin&logoColor=4A2540&labelColor=FFD6E8)](https://www.linkedin.com/in/kaitlynychen)
@@ -271,7 +271,7 @@ background I probably spent too long on.
 ## ✿ currently
 
 - 🌱 **learning**: how far I can push real models onto small hardware before they stop being useful
-- 💌 **looking for**: Spring 2027 co-ops & Summer 2028 internships in SWE / ML / embedded / edge AI
+- 💌 **looking for**: Spring 2027 co-ops & Summer 2027 internships in SWE / ML / embedded / edge AI
 - 🎧 **outside of code**: hiking, sudoku, and a steady rotation of Raspberry Pi projects
 
 <br/>
